@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Infinite Card Slider JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="messageBox" id="messageBox5">
+        <p class="message">I'll forever be the luckiest person to have fallen in love with you. 
+          <br>Every moment I have with God I always thank him for you.
+          <br>And I thank you for staying with me all this while. 
+          I love you baby.
+        </p>
+        <button class="messageButton" onclick="closeBox5()" id="messageButton1">&times;</button>
+      </div>
+      <div class="messageBox" id="messageBox4">
+        <p class="message">I’m so proud of you for the past year. The number of things you conquered, the amount of hard work you put in while giving me loads and loads of attention is insane. 
+          <br>I hope your life continues to turn out for the better and when stuff gets bad, I will always here for you. 
+        </p>
+        <button class="messageButton" onclick="closeBox4()" id="messageButton1">&times;</button>
+      </div>
+      <div class="messageBox" id="messageBox3">
+        <p class="message">I fell in love with your sincerity, your seriousness, kindness, appreciation and much much more (not ur humour). And of course, you are artwork I could admire for days on end 😉. And that smile omg, when you look at my eyes and smile, it lights up my entire world, you light up my entire world. 
+          I swear I couldn’t love you more than I do right now, but still, every day that goes on I only fall deeper and deeper in love with you. 
+          I will not trade anything in this world for the memories and relationship between the both of us. 
+          
+        </p>
+        <button class="messageButton" onclick="closeBox3()" id="messageButton1">&times;</button>
+      </div>
+      <div class="messageBox" id="messageBox2">
+        <p class="message">I still cannot believe we've been together for 2 years already now. <br>That's insane. 
+          I still cannot believe you are here in China, studying with me in the same school.
+          
+        </p>
+        <button class="messageButton" onclick="closeBox2()" id="messageButton1">&times;</button>
+      </div>
+      <div class="messageBox" id="messageBox1">
+        <p class="message">Hello Lisa
+        </p>
+        <button class="messageButton" onclick="closeBox1()" id="messageButton1">&times;</button>
+      </div>
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img"><img src="Lisa1.jpg" alt="img" draggable="false"></div>
+          <h2>The beginning of it all~</h2>
+          <span>11/09/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa2.jpg" alt="img" draggable="false"></div>
+          <h2>Gaming sesh</h2>
+          <span>24/09/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa3.jpg" alt="img" draggable="false"></div>
+          <h2>YIPPEEEE</h2>
+          <span>04/10/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa4.jpg" alt="img" draggable="false"></div>
+          <h2 style="text-align: center;">First month anniversary~</h2>
+          <span>01/11/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa5.jpg" alt="img" draggable="false"></div>
+          <h2><3</h2>
+          <span>11/11/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa6.jpg" alt="img" draggable="false"></div>
+          <h2>😋</h2>
+          <span>31/11/2022</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa7.jpg" alt="img" draggable="false"></div>
+          <h2>Cutie</h2>
+          <span>04/02/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img width=100% src="Lisa8.jpg" alt="img" draggable="false"></div>
+          <h2>Thank you 🌹</h2>
+          <span>14/02/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa9.jpg" alt="img" draggable="false"></div>
+          <h2>So Hot ❤️‍🔥</h2>
+          <span>17/02/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><video style="width: auto; height: 1279px;" src="Lisa10.mp4" draggable="false" alt="video" autoplay="true" loop="true"></div>
+          <h2>My cute lil reindeer</h2>
+          <span>14/03/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><video style="width: auto; height: 1279px;" muted = "true" src="Lisa11.mp4" draggable="false" alt="video" autoplay="true" loop="true"></div>
+          <h2 style="text-align: center;">Good movie watching</h2>
+          <span>17/03/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa12.jpg" alt="img" draggable="false"></div>
+          <h2>Outfit Shoppingg</h2>
+          <span>25/04/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa13.jpg" alt="img" draggable="false"></div>
+          <h2 style="text-align: center;">Did you forget we actually tied the knot?</h2>
+          <span>01/05/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa14.jpg" alt="img" draggable="false"></div>
+          <h2>🎂🫵</h2>
+          <span>06/07/2023r</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa15.jpeg" alt="img" draggable="false"></div>
+          <h2>🎂🙋‍♂️</h2>
+          <span>App Designer</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa16.jpg" alt="img" draggable="false"></div>
+          <h2>🏖️</h2>
+          <span>18/08/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa17.jpg" alt="img" draggable="false"></div>
+          <h2>I miss waking up beside you</h2>
+          <span>21/08/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa19.jpeg" alt="img" draggable="false"></div>
+          <h2>I love you so much</h2>
+          <span>21/08/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa20.jpg" alt="img" draggable="false"></div>
+          <h2>🤤</h2>
+          <span>24/09/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa21.jpg" alt="img" draggable="false"></div>
+          <h2>2nd anniversary</h2>
+          <span>04/10/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa22.jpg" alt="img" draggable="false"></div>
+          <h2>Gaming after sex😫</h2>
+          <span>27/10/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa23.jpg" alt="img" draggable="false"></div>
+          <h2>Heheh</h2>
+          <span>15/12/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa24.jpg" alt="img" draggable="false"></div>
+          <h2>So romantic</h2>
+          <span>31/12/2023</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa24.5.jpg" alt="img" draggable="false"></div>
+          <h2>❤️</h2>
+          <span>25/02/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa25.jpg" alt="img" draggable="false"></div>
+          <h2>USS</h2>
+          <span>01/04/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa26.jpg" alt="img" draggable="false"></div>
+          <h2>You look adorable</h2>
+          <span>13/04/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa27.jpg" alt="img" draggable="false"></div>
+          <h2>MORE FLOWERSS</h2>
+          <span>20/05/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa28.jpg" alt="img" draggable="false"></div>
+          <h2>XD</h2>
+          <span>04/07/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa29.jpg" alt="img" draggable="false"></div>
+          <h2>High in the sky ☁️</h2>
+          <span>04/07/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa30.jpg" alt="img" draggable="false"></div>
+          <h2 style="text-align: center;">One of the last times meeting in Malaysia</h2>
+          <span>11/07/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa31.jpg" alt="img" draggable="false"></div>
+          <h2>Doggie</h2>
+          <span>11/07/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa32.jpg" alt="img" draggable="false"></div>
+          <h2>BURGERR 🍔</h2>
+          <span>13/08/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa33.jpg" alt="img" draggable="false"></div>
+          <h2>Waiting ⌛</h2>
+          <span>30/08/2024</span>
+        </li>
+        <li class="card">
+          <div class="img"><img src="Lisa34.jpg" alt="img" draggable="false"></div>
+          <h2>SHES HERE!!!</h2>
+          <span>04/09/2024</span>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+  </body>
+</html>
